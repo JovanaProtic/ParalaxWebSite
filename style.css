@@ -1,0 +1,369 @@
+* {
+	font-family: 'KoHo', sans-serif;
+	color: #777;
+}
+nav {
+    display: block;
+    position: fixed;
+    background-color: #fff;
+    opacity: 1;
+    width: 100%;
+    top: 0;
+    z-index: 10;
+    box-shadow: 0px 0px 5px #dcdcdc;
+}
+nav * {
+    display: inline-block;
+}
+nav ul {
+    display: none;
+} 
+.fa-bars {
+    color: #000;
+}
+
+button.nav-btn {
+    border: none;
+    background-color: #fff;
+    display: inline-block;
+    position: fixed;
+    top: 0;
+    right: 5px;
+    margin: 21px;
+    padding: 10px;
+}  
+button:hover {
+	background-color: #000;
+	color: #fff;
+} 
+button:hover .fa-bars {
+	color: #fff;
+}                                              
+.home {
+    color: #000;
+    font-weight: lighter;
+    left: 5px;
+    margin: 21px;
+    padding: 10px; 
+}
+.home:hover {
+	background-color: #000;
+	color: #fff;
+}
+											/*Paralax Image*/
+article.background-img1 {
+	background-image: url(IMG/img1.jpeg);
+	background-size: cover;
+	background-repeat: no-repeat;
+	background-position: center;
+	/*background-attachment: scroll;*/
+	background-attachment: fixed;
+	min-height: 100vh;
+}
+.my-logo {
+	margin: 15%;
+	padding-top: 55%;	
+}
+.my-logo h1 {
+	background-color: #242424;
+	opacity: 0.7;
+	color: #fff;
+	padding: 10px;
+	text-align: center;
+	letter-spacing: 2px;
+}
+											/*About me*/
+.about-me,  .my-name {
+	width: 90%;
+	margin: 0 5%;
+}
+.about-me h1, h5 {
+	text-align: center;
+}
+.about-me h5 {
+	font-style: italic;
+} 
+.about-me p {
+	color: #777;
+	text-align: justify;
+}
+.my-name img {
+	object-fit: cover;
+	width: 90%;
+	margin: 0 5%;
+}
+.my-name h2 {
+	text-align: center;
+}
+.my-name p {
+	display: none;
+}
+												/*Progress bar*/
+.skills {
+	width: 100%;
+}
+.skills p {
+	text-align: center;
+	padding: 15px 0;
+	font-size: 21px;
+}
+.skills h3 {
+	text-align: left;
+	margin-left: 5%;
+	letter-spacing: 4px;
+	font-weight: lighter;
+}
+.skills .prog-bar {
+	width: 90%;
+	margin: 0 5%;
+	/*border: 1px solid #777;*/
+	background-color: #dcdcdc;
+	border-radius: 5px;
+	overflow: hidden;
+}
+.skills .prog-bar1 {
+	width: 90%;
+	text-align: center;
+	color: #fff;
+	background-color: #777;
+	padding: 10px 0;
+}
+.skills .prog-bar2 {
+	width: 85%;
+	text-align: center;
+	color: #fff;
+	background-color: #777;
+	padding: 10px 0;
+}
+.skills .prog-bar3 {
+	width: 75%;
+	text-align: center;
+	color: #fff;
+	background-color: #777;
+	padding: 10px 0;
+}
+														/*Statistics*/
+article.statistics {
+	background-color: #777;
+	margin-top: 21px;
+}
+article.statistics section {
+	padding: 21px 0;
+}
+article.statistics section * {
+	text-align: center;
+	color: #fff;
+}
+														/*Portfolio*/
+article.background-img2 {
+	background-image: url(IMG/portfolio.jpeg);
+	background-size: cover;
+	background-repeat: no-repeat;
+	background-position: center;
+	background-attachment: scroll;
+	/*background-attachment: fixed;*/
+	min-height: 400px;
+}
+article.gallery {
+	width: 100%;
+}
+.portfolio h1 {
+	text-align: center;
+	color: #fff;
+	opacity: 0.8;
+	letter-spacing: 4px;
+	margin: 15%;
+	padding-top: 55%;
+}
+article.gallery h1,p {
+	text-align: center;
+}
+section.grid-container img {
+	object-fit: cover;
+	width: 90%;
+	margin: 0 5%;
+}
+.gallery button {
+	text-align: center;
+	background-color: #777;
+	border: none;
+	border-radius: 5px;
+	color: #fff;
+	padding: 15px 21px;
+	width: 40%;
+	margin: 10% 30%;
+}
+														/*Contact*/
+article.background-img3 {
+	background-image: url(IMG/contact.jpeg);
+	background-size: cover;
+	background-repeat: no-repeat;
+	background-position: center;
+	background-attachment: scroll;
+	/*background-attachment: fixed;*/
+	min-height: 400px;
+}
+.contact h1 {
+	text-align: center;
+	color: #fff;
+	opacity: 0.8;
+	letter-spacing: 4px;
+	margin: 15%;
+	padding-top: 55%;
+}
+														/*Where I Work*/
+.work-place h1, p {
+	text-align: center;
+}
+.work-place p  {
+	font-style: italic;
+}
+.contact-info {
+	width: 80%;
+	margin: 0 10%;
+}
+.contact-info p {
+	text-align: left;
+	padding: 10px 0;
+	font-style: normal;
+}
+								/*Maps*/
+aside.map {
+	width: 80%;
+	margin: 10%;
+	height: 200px;
+    /*height: 350px;*/
+    filter: grayscale(70%);
+    /*margin-bottom: 10%;*/
+    border-radius: 5px;
+}
+																/*Footer*/
+footer {
+	text-align: center;
+	background-color: #777;
+	color: #fff;
+	font-size: 15px;
+	padding: 21px;
+}
+
+ 																 /*Media Queries*/
+@media (min-width: 700px) {
+								/*Paralax Image*/
+	article.background-img1 {
+		background-attachment: fixed;
+		min-height: 60vh;
+	}
+	.my-logo {
+		padding: 15% 35%;
+		padding-top: 25%;
+		width: 30%;	
+		margin: 0px;
+	}
+	.my-name {
+		display: grid;
+		grid-template-columns: auto auto;
+		grid-gap: 15px;
+	}
+	.my-name p {
+		display: inline-block;
+		text-align: justify;
+		padding-top: 45px;
+	}
+								/*Statistics*/
+	article.statistics {
+		display: grid;
+		grid-template-columns: auto auto auto auto;
+		margin-top: 100px;
+	}
+	article.background-img2 {
+		background-attachment: fixed;
+		min-height: 70vh;
+		margin-top: -35px;
+	}
+	.portfolio h1 {
+		margin: 15% 35%;
+		padding-top: 20%;
+		width: 30%;	
+	}
+	.grid-container {
+		display: grid;
+		grid-template-columns: auto auto auto auto;
+		grid-gap: 5px;
+		width: 90%;
+		margin: 0 5%;
+	}
+	section.grid-container img {
+		object-fit: cover;
+		width: 100%;
+		margin: 0px;
+		height: 123px;
+	}
+	.gallery button {
+		width: 20%;
+		margin: 10% 40%;
+		margin-bottom: 0%;
+	}
+	article.background-img3 {
+		background-attachment: fixed;
+		min-height: 70vh;
+		margin-top: -35px;
+	}
+	.contact h1 {
+		margin: 15% 35%;
+		padding-top: 20%;
+		width: 30%;	
+	}
+	.work-place-grid {
+		display: grid;
+		grid-template-columns: auto auto;
+		grid-gap: 5px;
+	}
+	aside.map {
+		width: 100%;
+		height: 220px;
+	}
+	.contact-info {
+		width: 100%;
+		margin: 0px;
+	}
+	.contact-info p {
+		text-align: center;
+		padding-top: 21px;
+	}
+}
+
+@media (min-width: 1024px) {
+	nav ul {
+		display: inline-block;
+		padding: 0px;
+	}
+	nav ul li  {
+	    color: #000;
+	    font-weight: lighter;
+	    left: 5px;
+	    margin: 21px;
+	    padding: 10px; 
+	    border-radius: 5px;
+	}
+	nav ul li:hover {
+		background-color: #000;
+	}
+	nav ul li a {
+		text-decoration: none;
+		color: #000;
+	}
+	nav ul li:hover a {
+		color: #fff;
+	}
+	button.nav-btn {
+		display: none;
+	}
+	article.background-img1 {
+		min-height: 100vh;
+	}
+	.skills {
+		width: 70%;
+		margin: 0 15%;
+	}	
+
+}
